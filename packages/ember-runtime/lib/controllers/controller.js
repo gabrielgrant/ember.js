@@ -1,8 +1,9 @@
 require('ember-runtime/system/object');
 require('ember-runtime/system/string');
 
-Ember.ControllerMixin = Ember.Mixin.create({
   /**
+    @class
+
     The object to which events from the view should be sent.
 
     For example, when a Handlebars template uses the `{{action}}` helper,
@@ -11,6 +12,7 @@ Ember.ControllerMixin = Ember.Mixin.create({
     By default, a controller's `target` is set to the router after it is
     instantiated by `Ember.Application#initialize`.
   */
+Ember.ControllerMixin = Ember.Mixin.create({
   target: null,
   store: null
 });

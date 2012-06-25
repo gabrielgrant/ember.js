@@ -61,6 +61,9 @@ Ember.ControllerMixin.reopen({
           context: App.Post.find()
         });
 
+    @name connectOutlet
+    @function
+    @memberOf Ember.ControllerMixin
     @param {Class} name a view class to instantiate
     @param {Object} context a context object to assign to the
       controller's `content` property, if a controller can be
