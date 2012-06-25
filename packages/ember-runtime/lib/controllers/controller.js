@@ -1,17 +1,17 @@
 require('ember-runtime/system/object');
 require('ember-runtime/system/string');
 
-  /**
-    @class
+/**
+  @class
 
-    The object to which events from the view should be sent.
+  The object to which events from the view should be sent.
 
-    For example, when a Handlebars template uses the `{{action}}` helper,
-    it will attempt to send the event to the view's controller's `target`.
+  For example, when a Handlebars template uses the `{{action}}` helper,
+  it will attempt to send the event to the view's controller's `target`.
 
-    By default, a controller's `target` is set to the router after it is
-    instantiated by `Ember.Application#initialize`.
-  */
+  By default, a controller's `target` is set to the router after it is
+  instantiated by `Ember.Application#initialize`.
+*/
 Ember.ControllerMixin = Ember.Mixin.create({
   target: null,
   store: null
